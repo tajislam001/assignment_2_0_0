@@ -28,7 +28,7 @@ class _AssingTwo extends State<AssingTwo>{
         _nameController.clear();
         _numberController.clear();
       });
-      print(_dataList);
+      //print(_dataList);
     }
   }
 
@@ -42,7 +42,7 @@ class _AssingTwo extends State<AssingTwo>{
           actions: [
             TextButton(
               onPressed: () {
-                Navigator.of(context).pop(); // Close dialog
+                Navigator.of(context).pop();
               },
               child: Icon(Icons.no_backpack, color: Colors.blue),
             ),
@@ -51,7 +51,7 @@ class _AssingTwo extends State<AssingTwo>{
                 setState(() {
                   _dataList.removeAt(index);
                 });
-                Navigator.of(context).pop(); // Close dialog
+                Navigator.of(context).pop();
               },
               //child: Text("Delete", style: TextStyle(color: Colors.red)),
               child: Icon(Icons.delete, color: Colors.red),
@@ -117,7 +117,7 @@ class _AssingTwo extends State<AssingTwo>{
                           ),
                           onPressed: (){
                             if(_formKey.currentState!.validate()){
-                              print("add data-1");
+                              //print("add data-1");
                               _addData();
                             }
 
